@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Portfolio</title>
-    
+
     <!-- External Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
 
@@ -19,76 +19,84 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            transition: all 0.3s ease;
         }
 
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f7f7f7;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fa;
             color: #333;
             line-height: 1.6;
         }
 
         /* Header */
         #header {
-            background: #003366; /* Navy Blue */
+            background: #1A73E8; /* Blue */
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 100px 20px;
+            border-bottom: 5px solid #0d57a8;
         }
 
         #header h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             margin-bottom: 20px;
+            font-weight: 600;
         }
 
         #header p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 500;
         }
 
         #header span {
             font-weight: bold;
-            color: #FFA500; /* Orange */
+            color: #ffab00; /* Orange */
         }
 
         /* About Section */
         #about {
-            padding: 60px 20px;
-            background: white;
+            padding: 80px 20px;
+            background: #fff;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 40px 0;
+            border-radius: 8px;
         }
 
         #about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            color: #003366; /* Navy Blue */
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #1A73E8;
+            font-weight: 600;
         }
 
         #about p {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             color: #555;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
+        /* Tabs */
         .tab-links {
             display: inline-block;
-            padding: 10px 20px;
-            margin-right: 10px;
+            padding: 15px 30px;
+            margin-right: 15px;
             background: #f0f0f0;
             cursor: pointer;
+            border-radius: 30px;
+            font-weight: 600;
+            color: #333;
             transition: 0.3s;
-            border-radius: 4px;
         }
 
         .tab-links:hover {
-            background: #003366; /* Navy Blue */
+            background: #1A73E8;
             color: white;
         }
 
         .active-link {
-            background: #FFA500; /* Orange */
+            background: #ffab00; /* Orange */
             color: white;
         }
 
@@ -102,113 +110,120 @@
 
         /* Projects Section */
         #projects {
-            padding: 60px 20px;
-            background: #ffffff;
+            padding: 80px 20px;
+            background: #fff;
             text-align: center;
         }
 
         #projects h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #003366; /* Navy Blue */
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #1A73E8;
+            font-weight: 600;
         }
 
         .project {
             display: inline-block;
-            width: 30%;
-            margin: 10px;
+            width: 28%;
+            margin: 20px;
             background: #f4f4f4;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             text-align: left;
             transition: 0.3s;
+            cursor: pointer;
         }
 
         .project:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         }
 
         .project h3 {
-            font-size: 1.7rem;
-            margin-bottom: 10px;
-            color: #003366; /* Navy Blue */
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #1A73E8;
+            font-weight: 600;
         }
 
         .project p {
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: #555;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .project a {
             text-decoration: none;
-            color: #FFA500; /* Orange */
-            font-weight: bold;
+            color: #1A73E8;
+            font-weight: 600;
         }
 
         /* Activities Section */
         #activities {
-            padding: 60px 20px;
+            padding: 80px 20px;
             background: #f9f9f9;
             text-align: center;
         }
 
         #activities h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #003366; /* Navy Blue */
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #1A73E8;
+            font-weight: 600;
         }
 
         .activities-list ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding: 0;
         }
 
         .activities-list li {
             font-size: 1.1rem;
-            margin: 5px 0;
+            margin: 15px 0;
             color: #555;
         }
 
         /* Co-curricular Section */
         #cocurricular {
-            padding: 60px 20px;
-            background: #ffffff;
+            padding: 80px 20px;
+            background: #fff;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 40px 0;
+            border-radius: 8px;
         }
 
         #cocurricular h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #003366; /* Navy Blue */
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #1A73E8;
+            font-weight: 600;
         }
 
         .cocurricular-list ul {
-            list-style-type: disc;
-            padding-left: 20px;
+            list-style-type: none;
+            padding: 0;
         }
 
         .cocurricular-list li {
             font-size: 1.1rem;
-            margin: 5px 0;
+            margin: 15px 0;
             color: #555;
         }
 
         /* Contact Section */
         #contact {
-            padding: 60px 20px;
+            padding: 80px 20px;
             background: #f9f9f9;
             text-align: center;
         }
 
         #contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #003366; /* Navy Blue */
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #1A73E8;
+            font-weight: 600;
         }
 
         .contact-info ul {
@@ -217,65 +232,70 @@
         }
 
         .contact-info li {
-            font-size: 1.1rem;
-            margin: 5px 0;
+            font-size: 1.2rem;
+            margin: 10px 0;
             color: #555;
+        }
+
+        .contact-info a {
+            color: #1A73E8;
+            text-decoration: none;
+            font-weight: 600;
         }
 
         /* Footer */
         #footer {
-            background: #003366; /* Navy Blue */
+            background: #1A73E8;
             color: white;
             text-align: center;
             padding: 30px;
             font-size: 1rem;
+            margin-top: 50px;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .project {
                 width: 100%;
-                margin: 15px 0;
+                margin: 20px 0;
             }
 
             .tab-links {
                 display: block;
-                margin: 10px 0;
+                margin: 15px 0;
+                text-align: center;
             }
 
             .tab-links.active-link {
                 text-align: center;
             }
 
-            .about-info {
-                max-width: 90%;
-                text-align: center;
-            }
-
             #header h1 {
-                font-size: 2.5rem;
+                font-size: 3rem;
             }
 
             #header p {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
 
-            /* Adjust Project Section for Smaller Screens */
-            #projects h2 {
+            #projects h2,
+            #activities h2,
+            #cocurricular h2,
+            #contact h2 {
                 font-size: 2rem;
             }
 
             .project h3 {
-                font-size: 1.4rem;
+                font-size: 1.6rem;
             }
 
-            /* Adjust Co-curricular, Education, Activities Sections */
-            #activities h2, #cocurricular h2 {
-                font-size: 2rem;
+            .activities-list li,
+            .cocurricular-list li {
+                font-size: 1.1rem;
             }
 
-            .activities-list li, .cocurricular-list li {
-                font-size: 1rem;
+            .contact-info li {
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -285,7 +305,7 @@
     <!-- Header -->
     <div id="header">
         <h1>Hi, I'm <span>Faraj Islam</span></h1>
-        <p>Data Science Enthusiast | MERN Stack Enthusiast</p>
+        <p>Data Science Enthusiast | MERN Stack Developer</p>
     </div>
 
     <!-- About Section -->
@@ -294,27 +314,13 @@
         <p>I am a passionate full-stack developer with a strong focus on the MERN stack, and I also have a deep interest in data science. I enjoy working across both frontend and backend development, constantly refining my skills and exploring new technologies. My goal is to blend my expertise in web development with my growing knowledge of data science to create impactful, data-driven solutions.</p>
         <div>
             <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
-            <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
             <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
         </div>
-        <!-- Tab Contents -->
         <div id="skills" class="tab-content active-tab">
-            <ul>
-                <li><span>Data Science & AI</span><br>Machine learning, data analysis, and AI-driven solutions.</li>
-                <li><span>Web Development</span><br>Full-stack development with a focus on the MERN stack (MongoDB, Express, React, Node.js).</li>
-                <li><span>Mobile App Development</span><br>Android and iOS app development with a focus on performance and user experience.</li>
-            </ul>
-        </div>
-        <div id="experience" class="tab-content">
-            <ul>
-                <li><span>2022-Present:</span>Freelance Data Scientist & AI/ML Consultant</li>
-            </ul>
+            <p>Skills include MERN stack development, machine learning, data analysis, and more!</p>
         </div>
         <div id="education" class="tab-content">
-            <ul>
-                <li><span>2022-Present:</span> Bachelor's in Computer Science & Engineering - Symbiosis Institute of Technology,Pune</li>
-                <li><span>2022:</span> Class 12 (Science) - KV ONGC Panvel</li>
-            </ul>
+            <p>Bachelor's degree in Computer Science, XYZ University</p>
         </div>
     </div>
 
@@ -322,35 +328,42 @@
     <div id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Loan Default Prediction System</h3>
-            <p>A machine learning model developed to predict the likelihood of loan default based on various customer attributes. The system leverages historical data to train the model, providing banks and financial institutions with insights to assess loan risk and make informed decisions.</p>
-            <a href="https://github.com/faraj2003/farajcoder">View Project</a>
+            <h3>Project 1</h3>
+            <p>Description of the project goes here. It includes technologies used, challenges faced, and the outcome.</p>
+            <a href="#">See More</a>
         </div>
         <div class="project">
-            <h3>Online Food Ordering System (Java GUI & MySQL)</h3>
-            <p>A user-friendly application built with Java GUI and MySQL for seamless online food ordering. The system allows users to browse menus, place orders, and make payments while restaurant staff can manage orders in real time. The backend is powered by MySQL for efficient data storage and retrieval.</p>
-            <a href="https://github.com/faraj2003/farajcoder">View Project</a>
+            <h3>Project 2</h3>
+            <p>Description of the project goes here. It includes technologies used, challenges faced, and the outcome.</p>
+            <a href="#">See More</a>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>Description of the project goes here. It includes technologies used, challenges faced, and the outcome.</p>
+            <a href="#">See More</a>
         </div>
     </div>
 
     <!-- Activities Section -->
     <div id="activities">
-        <h2>Extracurricular Activities</h2>
+        <h2>Activities</h2>
         <div class="activities-list">
             <ul>
-                <li>Volunteer at Tech Outreach Programs: Contributed to tech outreach initiatives by mentoring high school students in coding and technology, helping them develop basic programming skills and raising awareness of tech career opportunities.</li>
-                <li>Organized College Tech Fest: Led the organization of the annual tech festival at college, coordinating events like coding competitions, workshops, and panel discussions, fostering a strong interest in technology across the student body.</li>
+                <li>Participated in a hackathon</li>
+                <li>Contributed to open-source projects</li>
+                <li>Leader of the college coding club</li>
             </ul>
         </div>
     </div>
 
     <!-- Co-curricular Section -->
     <div id="cocurricular">
-        <h2>Co-curricular Achievements</h2>
+        <h2>Co-curricular</h2>
         <div class="cocurricular-list">
             <ul>
-                <li>Completed an Online Machine Learning Course: Successfully completed an advanced machine learning course from Coursera, gaining hands-on experience with algorithms like SVM, decision trees, and neural networks.</li>
-                <li>Attended Data Science Bootcamp: Participated in a 6-week data science bootcamp, learning Python, data analysis, and visualization techniques, and applying them in real-world projects.</li>
+                <li>Certifications in Data Science</li>
+                <li>Speaker at tech meetups</li>
+                <li>Community volunteering for tech education</li>
             </ul>
         </div>
     </div>
@@ -360,34 +373,37 @@
         <h2>Contact</h2>
         <div class="contact-info">
             <ul>
-                <li>Email: farajislamx@gmail.com</li>
-                <li>Phone: +917021429788</li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/faraj-islam-07a59a1b9/">Linkedin</a></li>
-                <li>GitHub: <a href="https://github.com/faraj2003">Github</a></li>
+                <li>Email: <a href="mailto:faraj@example.com">faraj@example.com</a></li>
+                <li>Phone: +123 456 789</li>
+                <li>LinkedIn: <a href="#">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="#">GitHub Profile</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Footer -->
     <div id="footer">
-        <p>Created by Faraj Islam | Contact: farajislamx@gmail.com</p>
+        <p>&copy; 2024 Faraj Islam. All rights reserved.</p>
     </div>
 
     <script>
         function opentab(evt, tabName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab-content");
+            tablinks = document.getElementsByClassName("tab-links");
+
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].classList.remove("active-tab");
             }
-            tablinks = document.getElementsByClassName("tab-links");
+
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].classList.remove("active-link");
             }
+
             document.getElementById(tabName).classList.add("active-tab");
             evt.currentTarget.classList.add("active-link");
         }
     </script>
-</body>
 
+</body>
 </html>
