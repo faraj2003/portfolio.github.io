@@ -320,7 +320,7 @@
             <p>Skills include MERN stack development, machine learning, data analysis, and more!</p>
         </div>
         <div id="education" class="tab-content">
-            <p>Bachelor's degree in Computer Science, XYZ University</p>
+            <p>Bachelor's degree in Computer Science, Symbiosis International University</p>
         </div>
     </div>
 
@@ -328,42 +328,42 @@
     <div id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of the project goes here. It includes technologies used, challenges faced, and the outcome.</p>
-            <a href="#">See More</a>
+            <h3>Portfolio Website</h3>
+            <p>Developed a personal portfolio website using the MERN stack to showcase projects and skills.</p>
+            <a href="https://github.com/faraj2003/farajcoder">View Project</a>
         </div>
         <div class="project">
-            <h3>Project 2</h3>
-            <p>Description of the project goes here. It includes technologies used, challenges faced, and the outcome.</p>
-            <a href="#">See More</a>
+            <h3>Data Analysis Project</h3>
+            <p>Utilized Python and machine learning to analyze a large dataset and generate insights.</p>
+            <a href="https://github.com/faraj2003/farajcoder">View Project</a>
         </div>
         <div class="project">
-            <h3>Project 3</h3>
-            <p>Description of the project goes here. It includes technologies used, challenges faced, and the outcome.</p>
-            <a href="#">See More</a>
+            <h3>E-commerce Website</h3>
+            <p>Created a fully functional e-commerce website with cart functionality and user authentication.</p>
+            <a href="https://github.com/faraj2003/farajcoder">View Project</a>
         </div>
     </div>
 
     <!-- Activities Section -->
     <div id="activities">
-        <h2>Activities</h2>
+        <h2>Extracurricular Activities</h2>
         <div class="activities-list">
             <ul>
-                <li>Participated in a hackathon</li>
-                <li>Contributed to open-source projects</li>
-                <li>Leader of the college coding club</li>
+                <li>Volunteered as a coding mentor for underprivileged students</li>
+                <li>Participated in hackathons and coding competitions</li>
+                <li>Member of the college tech club</li>
             </ul>
         </div>
     </div>
 
     <!-- Co-curricular Section -->
     <div id="cocurricular">
-        <h2>Co-curricular</h2>
+        <h2>Co-curricular Activities</h2>
         <div class="cocurricular-list">
             <ul>
-                <li>Certifications in Data Science</li>
-                <li>Speaker at tech meetups</li>
-                <li>Community volunteering for tech education</li>
+                <li>Completed a course in Data Science with Python</li>
+                <li>Attended workshops on AI and ML</li>
+                
             </ul>
         </div>
     </div>
@@ -373,37 +373,35 @@
         <h2>Contact</h2>
         <div class="contact-info">
             <ul>
-                <li>Email: <a href="mailto:faraj@example.com">faraj@example.com</a></li>
-                <li>Phone: +123 456 789</li>
-                <li>LinkedIn: <a href="#">LinkedIn Profile</a></li>
-                <li>GitHub: <a href="#">GitHub Profile</a></li>
+                <li>Email: <a href="mailto:farajislamx@gmail.com">Mail me!</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/faraj-islam-07a59a1b9/">LinkedIn Profile</a></li>
+                <li>GitHub: <a href="https://github.com/faraj2003/farajcoder">GitHub Profile</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Footer -->
     <div id="footer">
-        <p>&copy; 2024 Faraj Islam. All rights reserved.</p>
+        <p>&copy; 2024 Faraj Islam | All rights reserved</p>
     </div>
 
     <script>
         function opentab(evt, tabName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tab-content");
-            tablinks = document.getElementsByClassName("tab-links");
-
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].classList.remove("active-tab");
+                tabcontent[i].style.display = "none";
             }
-
+            tablinks = document.getElementsByClassName("tab-links");
             for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active-link");
+                tablinks[i].className = tablinks[i].className.replace(" active-link", "");
             }
-
-            document.getElementById(tabName).classList.add("active-tab");
-            evt.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active-link";
         }
-    </script>
 
+        document.getElementById("skills").style.display = "block";
+    </script>
 </body>
+
 </html>
